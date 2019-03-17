@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Location Recorder</string>
+
+    <string name="dummy_button">OK</string>
+    <string name="dummy_content"></string>
+    <string name="title_activity_main_activity_test">Location Recorder</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Help</string>
+
+    <string name="title_activity_fullscreen">Rename / Delete</string>
+
+    <string name="title_activity_confirm_clear_all">Confirm Clear All</string>
+
+    <string name="title_activity_help">Help</string>
+
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

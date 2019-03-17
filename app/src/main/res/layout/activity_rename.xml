@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.melin.jonas.LocationRecorder.SideActivities.RenameActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="48dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Rename from..."
+            android:id="@+id/textView2"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextRenameFrom"
+            android:layout_gravity="right|top"
+            android:text="position1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/buttonRenameCancel"
+            android:layout_weight="1"
+            android:layout_gravity="left|bottom" />
+
+        <EditText
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextRenameTo"
+            android:layout_gravity="right|top"
+            android:text="work"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="48dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Rename to..."
+            android:id="@+id/textView3"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="RENAME"
+            android:id="@+id/buttonRename"
+            android:layout_weight="1"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="70dp" />
+
+        <EditText
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextRenameDelete"
+            android:layout_gravity="right|center_vertical"
+            android:text="position1"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:id="@+id/buttonDeleteByName"
+            android:layout_weight="1"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="65dp" />
+
+        <TextView
+            android:layout_width="286dp"
+            android:layout_height="64dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Delete recordings based on name. If you gave the position a name the app will still recognize the position next time you arrive at it..."
+            android:id="@+id/textView7"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="55dp" />
+
+    </FrameLayout>
+
+</FrameLayout>

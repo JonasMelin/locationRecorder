@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/clear_unnamed"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Clear unnamed" />
+        <item
+            android:id="@+id/clear_all"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Clear logs" />
+        <item
+            android:id="@+id/renme"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Rename / Delete" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+</menu>
