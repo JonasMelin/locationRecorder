@@ -7,7 +7,7 @@ package com.melin.jonas.LocationRecorder.Service;
  */
 public class SupportAndDefinitions {
 
-    public final static boolean DEBUG = false;
+    public final static boolean DEBUG = true;
 
 
     public static double thresholdSteadyTime = 20;  //minutes

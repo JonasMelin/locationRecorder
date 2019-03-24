@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity
      */
     private void startService(){
         if(LocationRecorderService.getInstance() == null){
-            startService(new Intent(this, LocationRecorderService.class));
+            startForegroundService(new Intent(this, LocationRecorderService.class));
         }else{
             getLogsFromService();
         }

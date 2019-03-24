@@ -16,7 +16,7 @@ public class AutoStartReceiver extends BroadcastReceiver {
 
         if(LocationRecorderService.getInstance() == null) {
             Intent myIntent = new Intent(context, LocationRecorderService.class);
-            context.startService(myIntent);
+            context.startForegroundService(myIntent);
         }
     }
 }

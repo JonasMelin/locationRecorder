@@ -55,6 +55,9 @@ public class MyLogger {
         logStatus(mainText, extraText, 0xfaf1af);
     }
     public synchronized void logStatus(String mainText, String extraText, int color ){
+
+        sysout("DISPLAYING NOTIFICATION: "+mainText+", "+extraText);
+
         LocationRecorderService service = LocationRecorderService.getInstance();
 
         if(service == null)
