@@ -16,8 +16,10 @@ public class LocationRecorderService extends Service {
     private static LocationRecorderService myself;
 
     public LocationRecorderService() {
+        MyLogger.sysout("LocactionRecordeService created!!");
         myself = this;
         positionRecordList = PositionRecordListHandler.getInstance();
+        //this.startForegroundService(new Intent(LocationRecorderService.class));
     }
 
     @Override
@@ -78,7 +80,6 @@ public class LocationRecorderService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-
         positionRecordList.init();
         this.logger.logStatus("Initilalizing positioning...", "");
     }
@@ -89,6 +90,7 @@ public class LocationRecorderService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        MyLogger.sysout("LocactionRecordeService onDestroy");
         myself = null;
     }
 
